@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+    <body> 
+    
+            <div id="quiz" >
+                    <h5>Score: <span id="mark">0</span>/5</h5>
+                    <h3> Quiz</h3>
+                    <h5>QUESTION <span id="num"></span> / 5</h5>
+                    <p id="question"></p>
+                    <div id="opt1" class="options" onclick="choose(event)"></div>
+                    <div id="opt2" class="options" onclick="choose(event)"></div>
+                    <div id="opt3" class="options" onclick="choose(event)"></div>
+                    <div id="ans" style="display:none"></div>
+                   <button id="nextbtn" onclick="changeQuestion()">Next</button>
+                    <h3 id="outcome"></h3>
+
+            </div>
+            <div id="end" style="background:null;display:none">
+                <div style="color:white" id="box">
+                    <h4 style="text-align: center">Total Score: <span id="finalScore"></span>/50</h4>
+<br>                    <a href="index.html">
+                    <h1 style="text-align: center">Try Again</h1>
+                </a>
+                   
+                </div>    
+            </div>
+
+        
+    </body>
+</html>
+
